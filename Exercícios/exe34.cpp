@@ -2,8 +2,8 @@
 #include <windows.h>
 
 void printInfo(const std::string nome, const int idade) {       // Esse código resulta em erro porque já declara as variáveis nome e idade como constantes
-    nome = " ";                                                 // Portanto, alterar elas como é feito aqui, colide com a lógica do resto do código
-    idade = 0;
+    // nome = " ";                                                 // Portanto, alterar elas como é feito aqui, colide com a lógica do resto do código
+    // idade = 0;
 
     std::cout << nome << '\n';
     std::cout << idade << '\n';
