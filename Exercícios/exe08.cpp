@@ -15,7 +15,7 @@ int main() {
     } else if (idade >= 18) {
         std::cout << "Seja bem vinde, Usuário.";
     } else {
-        std::cout << "ERRO. Você não atinge a idade mínima para acessar este programa.";
+        std::cout << "Você não atinge a idade mínima para acessar este programa.";
     }
     return 0;
 }
