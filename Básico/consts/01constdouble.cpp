@@ -5,7 +5,7 @@ int main() {
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 
-    const double PI = 3.14159;  // torna o valor de uma variável imutável
+    const double PI = 3.14159; // torna o valor de uma variável imutável
     double radio = 10;
     double circum = 2 * PI * radio;
     
