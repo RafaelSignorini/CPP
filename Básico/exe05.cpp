@@ -4,7 +4,7 @@ int main() {
     double x = (int) 3.14; // Conversão explícita de um double para um int
     std::cout << x << '\n';
 
-    std::cout << (char) 100 << '\n'; // Conversão implícita de um double para um int
+    std::cout << (char) 100 << '\n'; // Conversão implícita de um int para um char
 
     int corretas = 8;
     int questoes = 10;
