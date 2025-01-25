@@ -7,7 +7,7 @@ int main() {
 
     std::string nome;
 
-    while (nome.empty()) {
+    while (nome.empty()) { // verifica se a string está vazia
         std::cout << "Insira seu nome abaixo: ";
         std::getline(std::cin, nome);
     }
