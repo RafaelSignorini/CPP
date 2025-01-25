@@ -10,7 +10,7 @@ int main() {
     std::cout << "Insira um número indicando o mês atual (1-12): \n";
     std::cin >> month;
 
-    switch (month) {
+    switch (month) { // switch é uma estrutura de controle que permite a seleção de um bloco de código a ser executado de acordo com o valor de uma variável
         case 1:
             std::cout << "O mês atual é Janeiro.\n";
             break;
