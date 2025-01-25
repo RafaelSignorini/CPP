@@ -12,7 +12,7 @@ int main() {
     text_t nome = "Rafael"; // text_t é um alias para std::string, nome é uma variável do tipo text_t que armazena "Rafael"
     num_t idade = 18; // num_t é um alias para int, idade é uma variável do tipo num_t que armazena 18
 
-    std::cout << "Olá " << nome << ", sua idade registrada é " << idade << " anos.\n";
+    std::cout << "Olá usuário, seu nome registrado é " << nome << " e sua idade registrada é " << idade << " anos.\n";
 
     return 0;
 }
