@@ -10,7 +10,7 @@ int main() {
     std::cout << "Insira sua nota (0 a 100): ";
     std::cin >> nota;
 
-    nota >= 70 ? std::cout << "Você passou.\n" : std::cout << "Você não passou.\n";     // usar ? e : no lugar de3 if e else encurta o código e economiza linhas
+    nota >= 70 ? std::cout << "Você passou.\n" : std::cout << "Você não passou.\n"; // usar ? e : no lugar de if e else encurta o código e economiza linhas
 
     int num;
 
