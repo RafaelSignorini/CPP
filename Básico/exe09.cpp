@@ -57,7 +57,7 @@ int main() {
     std::cout << "Qual foi o seu conceito esse mês? (A, B ou C): \n";
     std::cin >> nota;
 
-    switch (nota) {
+    switch (nota) { // este switch verifica a nota do usuário e imprime uma mensagem de acordo com o conceito
         case 'A':
             std::cout << "Você foi muito bem.\n";
             break;
