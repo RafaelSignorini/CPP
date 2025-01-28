@@ -23,7 +23,7 @@ int main() {
     std::cout << "Suas comidas favoritas registradas foram:\n";
     for (int i = 0; !comidas[i].empty(); i++) { // o loop é interrompido quando a string na posição i estiver vazia, no caso o momento que o usuário inserir '.' como resposta
         std::cout << "-=-" << comidas[i] << '\n';
-    } // esse é um método efiiciente para criar listas de tamanho variável, economizando memória, dando o nome desse método de "lista dinâmica", ou "memória dinâmica"
+    } // esse é um método eficiente para criar listas de tamanho variável, economizando memória, dando o nome desse método de "lista dinâmica", ou "memória dinâmica"
 
     return 0;
 }
