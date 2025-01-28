@@ -33,7 +33,6 @@ void escolha(int escolha) { // a escolha do usuário é recebida para ser conver
         case 3: std::cout << "Tesoura\n";
         break;
         default: std::cout << "ERRO.\n";
-        continue; // caso o usuário escolha um número diferente de 1, 2 ou 3, ele é solicitado a escolher novamente para que o programa não quebre
     }
 }
 
