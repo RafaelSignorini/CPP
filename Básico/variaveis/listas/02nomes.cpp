@@ -16,9 +16,9 @@ int main() {
         std::cout << notas[i] << '\n';
     }
     
-    std::string nomes[5]; // caso a variável seja declarada porém não seja atribuída nenhum valor de imediato, um limite de espaços deve ser declarado nas colchetes
+    std::string nome[5]; // caso a variável seja declarada porém não seja atribuída nenhum valor de imediato, um limite de espaços deve ser declarado nas colchetes
 
-    nomes[0] = "Rafael Brito Signorini\n"; // esse é o mais próximo do 'append' que se tem no C++
+    nome[0] = "Rafael Brito Signorini\n"; // esse é o mais próximo do 'append' que se tem no C++
     
     return 0;
 }
