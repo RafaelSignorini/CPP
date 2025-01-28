@@ -15,11 +15,5 @@ int main() {
 
     std::cout << carros[0] << '\n';
 
-    double precos[3]; // uma lista pode ser criada em uma linha e seus valores atribuídos em outra, porém, por esse método, é necessário declarar o limite de espaços nas colchetes
-
-    precos[0] = 549.41; // e aqui se atribui algum valor a um espaço específico da lista
-
-    std::cout << "Este produto custa R$" << precos[0];
-
     return 0;
 }
