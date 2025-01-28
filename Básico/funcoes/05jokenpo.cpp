@@ -32,7 +32,7 @@ void escolha(int escolha) { // a escolha do usuário é recebida para ser conver
         break;
         case 3: std::cout << "Tesoura\n";
         break;
-        default: std::cout << "ERRO.\n";
+        default: std::cout << "ERRO.\n"; // o default fica sem break pois o erro é o último caso e dessa forma ele repete a pergunta até que seja inserida uma resposta válida
     }
 }
 
