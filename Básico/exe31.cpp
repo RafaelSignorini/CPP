@@ -5,7 +5,7 @@ void sort(int lista[], int tamanho) {
     int memoria;
     for (int i = 0; i < tamanho - 1; i++) {
         for (int j = 0; j < tamanho - i - 1; j++) {
-            if (lista[j] > lista[j + 1]) {      // Para fazer ser decrescente, apenas mudar o '>' por '<' nessa linha
+            if (lista[j] > lista[j + 1]) { // Para fazer ser decrescente, apenas mudar o '>' por '<' nessa linha
                 memoria = lista[j];
                 lista[j] = lista[j + 1];
                 lista[j + 1] = memoria;
