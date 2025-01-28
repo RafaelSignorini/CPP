@@ -1,10 +1,10 @@
-#include <iostream>
+#include <iostream> // o código abaixo é um jogo da velha
 #include <windows.h>
 
-void drawBoard(char *spaces) {
-    std::cout << '\n';
-    std::cout << "      |     |     \n";
-    std::cout << "   " << spaces[0] << "  |  " << spaces[1] << "  |  " << spaces[2] << " \n"; 
+void drawBoard(char *spaces) { // essa função desenha o tabuleiro, recebendo um ponteiro de char com espaços vazios como parâmetro
+    std::cout << '\n'; // quebra de linha simples
+    std::cout << "      |     |     \n"; // desenho do tabuleiro
+    std::cout << "   " << spaces[0] << "  |  " << spaces[1] << "  |  " << spaces[2] << " \n"; // essa linha não só desenha o tabuleiro, mas seus espaços também, sejam eles vazios ou preenchidos
     std::cout << "______|_____|_____\n";
     std::cout << "      |     |     \n";
     std::cout << "   " << spaces[3] << "  |  " << spaces[4] << "  |  " << spaces[5] << " \n"; 
@@ -13,6 +13,7 @@ void drawBoard(char *spaces) {
     std::cout << "   " << spaces[6] << "  |  " << spaces[7] << "  |  " << spaces[8] << " \n"; 
     std::cout << "      |     |     \n";
 }
+
 void playerMove(char *spaces, char player) {
     int numero;
     do {
@@ -25,6 +26,7 @@ void playerMove(char *spaces, char player) {
         }
     } while (numero < 1 || numero > 9);
 }
+
 void computerMove(char *spaces, char computer) {
     int numero;
     srand(time(NULL));
@@ -36,6 +38,7 @@ void computerMove(char *spaces, char computer) {
         }
     }
 }
+
 bool checkWinner(char *spaces, char player, char computer) {
     if (spaces[0] != ' ' && spaces[0] == spaces[1] && spaces[1] == spaces[2]) {
         spaces[0] == player ? std::cout << "Você venceu!\n" : std::cout << "Você perdeu!\n";
@@ -58,6 +61,7 @@ bool checkWinner(char *spaces, char player, char computer) {
     }
     return true;
 }
+
 bool checkTie(char *spaces) {
     for (int i = 0; i < 9; i++) {
         if (spaces[i] == ' ') {
