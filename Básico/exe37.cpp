@@ -10,9 +10,9 @@ int main() {
     int *ponteiro = nullptr;
     int x = 987;
 
-    cout << ponteiro;   // O ponteiro atualmente tem o valor 0
+    cout << ponteiro; // O ponteiro atualmente tem o valor 0
 
-    ponteiro = &x;      // O ponteiro agora aponta para o endereço de x
+    ponteiro = &x; // O ponteiro agora aponta para o endereço de x
 
     if (ponteiro == nullptr) {
         cout << "O ponteiro não foi inicializado\n";
