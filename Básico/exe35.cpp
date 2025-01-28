@@ -7,7 +7,7 @@ int getDigit(const int numero) {
 }
 
 int somarPares(const std::string numCartao) {
-    int soma = 0;   // recebe um dígito a cada 2 a partir do penúltimo indo da direita para a esquerda
+    int soma = 0; // recebe um dígito a cada 2 a partir do penúltimo indo da direita para a esquerda
     for (int i = numCartao.size() - 2; i >= 0; i -= 2) {
         //              Primeiro é necessário subtrair o valor do char 0 pra que o código não o multiplique por 2 e gere um erro
         soma += getDigit((numCartao[i] - '0') * 2);
@@ -15,7 +15,7 @@ int somarPares(const std::string numCartao) {
     return soma;
 }
 
-int somarImpares(const std::string numCartao) {
+int somarImpares(const std::string numCartao) { // recebe um dígito a cada 2 a partir do último indo da direita para a esquerda
     int soma = 0;
     for (int i = numCartao.size() - 1; i >= 0; i -= 2) {
         soma += numCartao[i] - '0';
@@ -35,9 +35,9 @@ int main() {
         std::cout << "Insira um número de cartão: ";
         std::cin >> numCartao;
 
-        resultado = somarImpares(numCartao) + somarPares(numCartao);
+        resultado = somarImpares(numCartao) + somarPares(numCartao); // soma dos dígitos pares e ímpares para verificar se o cartão é válido
 
-        if (resultado % 10 == 0) {
+        if (resultado % 10 == 0) { // se a soma dos dígitos for divisível por 10, o cartão é válido
             std::cout << "O número do cartão inserido é válido.\n";
             valido = true; // 4666145416516565 foi um chute e deu certo de primeira
         } else {
