@@ -20,4 +20,5 @@ int main() {
     std::isspace(user_input) ? std::cout << "O dígito é um espaço.\n" : std::cout << "O dígito não é um espaço.\n"; // Check if character is a white-space (function)
     std::isupper(user_input) ? std::cout << "O dígito é maiúsculo.\n" : std::cout << "O dígito não é maiúsculo.\n"; // Check if character is uppercase letter (function)
     std::isxdigit(user_input) ? std::cout << "O dígito é hexadecimal.\n" : std::cout << "O dígito não é hexadecimal.\n"; // Check if character is hexadecimal digit (function)
+    return 0;
 }
