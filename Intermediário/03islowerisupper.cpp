@@ -10,7 +10,7 @@ int main() {
     int minusculas{};
     
     std::cout << "Frase original: " << msg << '\n';
-    for (auto caractere : msg) {
+    for (auto caractere : msg) { // "auto" define o tipo da variável de acordo com seu conteúdo (int, double, char, string, etc)
         if (std::islower(caractere)) { // O único problema com esse código é que ele não recebe letras especiais (é, ç, ã) como minúsculas
             minusculas++;
         } else if (std::isupper(caractere)) {
