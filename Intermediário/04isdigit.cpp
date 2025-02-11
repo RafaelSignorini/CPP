@@ -6,8 +6,7 @@ int main() {
     SetConsoleCP(CP_UTF8);
 
     std::string user_input;
-    int crc_count = 0;
-    int num_count = 0;
+    int crc_count, num_count = 0;
     std::cout << "Insira dígitos aleatórios do teclado:\n";
     std::getline(std::cin, user_input);
 
