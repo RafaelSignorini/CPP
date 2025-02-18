@@ -16,13 +16,16 @@ void drawBoard(char *spaces) { // essa função desenha o tabuleiro, recebendo u
 
 void playerMove(char *spaces, char player) { // essa função verifica os movimentos feitos pelo jogador após seus inputs
     int numero; // variável que armazena o número escolhido pelo jogador para preencher o espaço vazio escolhido
+    std::cout << "Sua vez, escolha um número de 1 a 9: ";
     do {
-        std::cout << "Sua vez, escolha um número de 1 a 9: ";
         std::cin >> numero;
         numero--; // decrementa o número escolhido pelo jogador para que ele possa ser usado como índice do array, se não haveria um erro de lógica
         if (spaces[numero] == ' ') {
             spaces[numero] = player;
             break;
+        } else {
+            continue;
+            std::cout << "Essa posição já foi escolhida, tente novamente: ";
         }
     } while (numero < 1 || numero > 9); // enquanto o número escolhido pelo jogador for menor que 1 ou maior que 9, o loop continua, proibindo respostas impossíveis de serem implementadas
 }
