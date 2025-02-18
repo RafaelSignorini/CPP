@@ -2,7 +2,7 @@
 #include <windows.h>
 
 void drawBoard(char *spaces) { // essa função desenha o tabuleiro, recebendo um ponteiro de char com espaços vazios como parâmetro
-    std::endl; // quebra de linha simples
+    std::cout << std::endl; // quebra de linha simples
     std::cout << "      |     |     \n"; // desenho do tabuleiro
     std::cout << "   " << spaces[0] << "  |  " << spaces[1] << "  |  " << spaces[2] << " \n"; // essa linha não só desenha o tabuleiro, mas seus espaços também, sejam eles vazios ou preenchidos
     std::cout << "______|_____|_____\n";
