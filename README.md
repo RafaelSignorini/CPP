@@ -1,2 +1,2 @@
 # CPP
- Repositório de C++ básico
+ Repositório de C++
