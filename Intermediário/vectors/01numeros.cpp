@@ -12,7 +12,7 @@ int main() {
     std::cout << numsVec.back() << " is the new last number in the int vector array" << std::endl; // exibe apenas o último valor do vetor
     std::cout << numsVec.front() << " is the first number in the int vector array" << std::endl; // exibe apenas o primeiro valor do vetor
 
-    numsVec.insert(2, 76); // adiciona um valor na posição 2, "empurrando" tanto o valor nesta posição quanto os valores seguintes uma posição "à frente"
+    numsVec.insert(numsVec.begin(), 76); // adiciona um valor na posição 2, "empurrando" tanto o valor nesta posição quanto os valores seguintes uma posição "à frente"
     std::cout << "a new number was added to the array" << std::endl;
     std::cout << numsVec.front() << " is the new first number in the int vector array" << std::endl;
 
