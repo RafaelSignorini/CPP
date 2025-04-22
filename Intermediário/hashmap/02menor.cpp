@@ -16,7 +16,7 @@ int main() {
         std::cout << number << " ";
     }
 
-    int menor = std::numeric_limits<int>::min();
+    int menor = std::numeric_limits<int>::max();
 
     for (int num : randomNumbers) {
         if (num < menor) {
