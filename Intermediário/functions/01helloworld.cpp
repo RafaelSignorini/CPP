@@ -1,12 +1,12 @@
 #include <iostream>
 #include <windows.h>
 
-void helloworld() {
-    std::cout << "Olá Mundo!" << std::endl;
-}
-
 void msg(std::string msg) {
     std::cout << msg << std::endl;
+}
+
+void helloworld() {
+    msg("Olá meu amor <3!");
 }
 
 int main() {
@@ -14,7 +14,6 @@ int main() {
     SetConsoleCP(CP_UTF8);
 
     helloworld();
-    msg("Olá meu amorzinho <3!");
 
     return 0;
 }
