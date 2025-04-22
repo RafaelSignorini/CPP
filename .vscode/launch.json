@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Rafael/Documents/GitHub/CPP/Intermediário/vectors",
-      "program": "c:/Users/Rafael/Documents/GitHub/CPP/Intermediário/vectors/build/Debug/outDebug",
+      "cwd": "c:/Users/Rafael/Documents/GitHub/CPP",
+      "program": "c:/Users/Rafael/Documents/GitHub/CPP/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
