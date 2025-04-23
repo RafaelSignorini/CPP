@@ -19,7 +19,7 @@ int main() {
     
     std::cout << "\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" << std::endl;
     
-    std::cout << "Números em ordem crescente:" << std::endl;
+    std::cout << "Números em ordem decrescente:" << std::endl;
     for (int i = 0; i < randomNumbers.size(); ++i) {
         for (int j = 0; j < randomNumbers.size(); ++j) {
             if (randomNumbers[i] > randomNumbers[j]) {
