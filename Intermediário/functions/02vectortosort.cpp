@@ -26,7 +26,7 @@ void sortVector(std::vector<int>& vectorToSort) { // cria a variável vectorToSo
     }
 }
 
-void printVector(std::vector<int>& vectorToPrint) { // cria outra referência da variável 'randomNumbers'
+void printVector(const std::vector<int>& vectorToPrint) { // cria outra referência da variável 'randomNumbers', dessa vez uma constante, evitando alterações
     std::cout << "Números em ordem crescente:" << std::endl;
     for (int num : vectorToPrint) {
         std::cout << num << " ";
