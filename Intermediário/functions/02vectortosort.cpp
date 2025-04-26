@@ -13,12 +13,10 @@ std::vector<int> generateRandomNumbers(int qnt) {
         randomNumbers.push_back(number);
         std::cout << number << " ";
     }
-    std::cout << std::endl;
     return randomNumbers;
 }
 
-std::vector<int> sortVector(std::vector<int> vectorToSort) {
-    std::cout << "Números em ordem crescente:" << std::endl;
+std::vector<int> sortVector(std::vector<int>& vectorToSort) {
     for (int i = 0; i < vectorToSort.size(); i++) {
         for (int j = 0; j < vectorToSort.size(); j++) {
             if (vectorToSort[i] < vectorToSort[j]) {
@@ -37,10 +35,10 @@ int main() {
 
     std::cout << "\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" << std::endl;
 
-    std::vector<int> sorted = sortVector(randomNumbers);
+    sortVector(randomNumbers);
 
-    std::cout << "Números ordenados:" << std::endl;
-    for (int num : sorted) {
+    std::cout << "Números em ordem crescente:" << std::endl;
+    for (int num : randomNumbers) {
         std::cout << num << " ";
     }
 
